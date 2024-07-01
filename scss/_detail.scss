@@ -1,0 +1,128 @@
+@import "variables";
+
+.header {
+  .with-back-arrow {
+    position: relative;
+  }
+
+  &__arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    left: 2rem;
+    height: 2rem;
+    width: 2rem;
+    top: 50%;
+    color: black;
+  }
+}
+
+.headerImg {
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 32rem;
+  width: 100%;
+}
+
+.submenu {
+  overflow: hidden;
+  padding: 0 1rem;
+  max-width: 100%;
+
+  &__title {
+    position: relative;
+    text-transform: uppercase;
+    font-weight: normal;
+    padding-bottom: 0.5rem;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: $color-tertiary;
+      left: 0;
+      bottom: 0;
+      height: 0.25rem;
+      width: 3rem;
+    }
+  }
+}
+
+.menuItem {
+  display: flex;
+  background-color: white;
+  overflow: hidden;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  border-radius: 0.75rem;
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  padding: 1rem;
+  margin: 1rem 0;
+  max-width: 100%;
+
+  &__header {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    flex: 1;
+  }
+
+  &__title {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0;
+  }
+
+  &__description {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin: 0;
+  }
+
+  &__price {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-weight: bold;
+    padding-left: 0.5rem;
+  }
+
+  &__confirmation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.5s;
+    background-color: $color-tertiary;
+    margin: -1rem -5rem -1rem 1rem;
+    width: 4rem;
+  }
+
+  &:hover &__confirmation {
+    margin-right: -1rem;
+  }
+
+  &__wrapIcon {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(180deg);
+    transition-duration: 0.5s;
+    border-radius: 100px;
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+
+  &:hover &__wrapIcon {
+    transform: rotate(0);
+  }
+
+  &__icon {
+    color: $color-tertiary;
+  }
+}

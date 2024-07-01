@@ -1,0 +1,6 @@
+.local {
+  display: flex;
+  justify-content: center;
+  padding: 1.25rem;
+  background-color: rgb(243, 243, 243);
+}

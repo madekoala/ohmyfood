@@ -1,0 +1,192 @@
+
+.local {
+    display: flex;
+    justify-content: center;
+    padding: 1.25rem ;
+    background-color: rgb(243, 243, 243);
+    font-size: 1.2rem;
+    position: relative;
+  
+    &__icon {
+      margin-right: 1rem;
+    }
+  
+    &__text {
+      font-weight: 700;
+    }
+  }
+  
+  .fonctionnement {
+    padding: 2rem;
+    text-align: center;
+    background-color: rgb(250, 250, 250);
+  
+    &__title {
+      margin: 0;
+    }
+  
+    &__subtitle {
+      font-weight: 300;
+      margin: 1.5rem 0;
+    }
+  
+    &__btn {
+      @include button();
+    }
+  }
+  
+  .tuto {
+    padding: ($appPadding + 1rem) $appPadding;
+  
+    &__title {
+      margin-top: 0;
+    }
+  
+    &__steps {
+      padding: 0;
+      list-style: none;
+      counter-reset: compteListe;
+  
+      @media (min-width: 64rem) {
+        display: flex;
+      }
+    }
+  
+    &__step {
+      display: flex;
+      position: relative;
+      align-items: center;
+      box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+      border-radius: 1.25rem;
+      background-color: #f6f6f6;
+      margin: 1rem 0 1rem 0.75rem;
+      padding: 1.5rem;
+      &:last-child {
+        background-color: #f5edff;
+      }
+  
+      @media (min-width: 64rem) {
+        flex: 1;
+        margin: 0;
+        margin-left: 2rem;
+  
+        &:first-child {
+          margin-left: 0.75rem;
+        }
+      }
+  
+      &:first-child {
+        margin-top: 0;
+      }
+  
+      &:last-child {
+        margin-bottom: 0;
+      }
+  
+      &::before {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        content: counter(compteListe) " ";
+        counter-increment: compteListe 1;
+        background: $color-primary;
+        height: 1.5rem;
+        width: 1.5rem;
+        border-radius: 100px;
+        color: white;
+        left: -0.75rem;
+      }
+    }
+  
+    &__icon {
+      margin-right: 1rem;
+      color: #7e7e7e;
+    }
+  }
+  
+  .restaurants {
+    background-color: #f6f6f6;
+    padding: ($appPadding + 1rem) $appPadding;
+  }
+  .restaurants__title {
+    @media (min-width: 64rem) {
+      margin-left: 150px;
+    }
+  }
+  .cards {
+    @media (min-width: 64rem) {
+      display: flex;
+      column-gap: 2rem;
+      position: inherit;
+      left: 12rem;
+    }
+  }
+  
+  .card {
+    display: block;
+    position: relative;
+    color: inherit;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 1rem;
+    margin-block: 2rem;
+    width: 100%;
+  
+    &__img {
+      height: 12rem;
+      width: 100%;
+      @media (min-width: 64rem) {
+        width: 100%;
+      }
+      border: transparent solid 0px;
+      border-radius: 1rem 1rem 0 0;
+      box-shadow: none;
+      object-fit: cover;
+    }
+
+    
+    &__badge {
+      position: absolute;
+      background-color: $color-tertiary;
+      color: darken($color-tertiary, 50%);
+      border-radius: 0.125rem;
+      top: 1rem;
+      right: 0.75rem;
+      padding: 0.5rem;
+    }
+  
+    &__footer {
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+  
+    &__content {
+      flex: 1;
+    }
+  
+    &__title {
+      margin: 0;
+      margin-bottom: 0.25rem;
+    }
+  
+    &__subtitle {
+      margin: 0;
+    }
+  
+    &__btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: transparent 0px solid;
+      padding: 0;
+      width: 2rem;
+      height: 2rem;
+    }
+  
+    &__like {
+      background-color: white !important;
+    }
+  }
