@@ -1,4 +1,5 @@
 @import "variables";
+@import "animation";
 
 .header {
   .with-back-arrow {
@@ -125,4 +126,26 @@
   &__icon {
     color: $color-tertiary;
   }
+}
+
+.delay-0 {
+  animation: itemAppear 2s;
+}
+.delay-1 {
+  animation: itemAppear 3s;
+}
+.delay-2 {
+  animation: itemAppear 4s;
+}
+
+.wrapBtn {
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  padding: 3rem 0;
+}
+
+.commandBtn {
+  @include button($app-padding);
+  cursor: pointer;
 }

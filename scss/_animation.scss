@@ -1,19 +1,105 @@
-//bouton explorer nos restaurants//
-@mixin button() {
+@use "sass:color";
+@import "variables";
+
+.menu {
+  position: relative;
+  border-radius: 2rem 2rem 0 0;
+  background-color: #f6f6f6;
+  z-index: 1;
+  margin-top: -4rem;
+  margin: auto;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem 0 1rem;
+    margin-top: -8rem;
+  }
+
+  &__title {
+    font-family: "Shrikhand", "cursive";
+  }
+
+  /*animation coeur */
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: transparent;
+    background-color: black;
+    border: transparent 0px solid;
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+    cursor: pointer;
+
+    &:hover::before {
+      opacity: 1;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      opacity: 0;
+      transition: 0.5s;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(
+        0deg,
+        $color-primary 0%,
+        $color-secondary 100%
+      );
+    }
+  }
+
+  &__like {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    mix-blend-mode: lighten;
+    transition-duration: 0.25s;
+    background-color: #f6f6f6;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__btn:hover {
+    .menu__like {
+      &--noBg {
+        opacity: 0;
+      }
+    }
+  }
+}
+/**************************************/
+// Bouton "explorer nos restaurants"//
+@mixin button($type) {
   border: 0;
   padding: 0.75rem 1.5rem;
   font-weight: 500;
   font-size: 1.1rem;
-  border-radius: 100%;
+  border-radius: 100px;
   color: white;
   background-color: rgb(104, 104, 104);
+  background-image: linear-gradient(
+    0deg,
+    color.scale($color-primary, $alpha: -10%) 0%,
+    color.scale($color-secondary, $alpha: -10%) 100%
+  );
   cursor: pointer;
-  transition-duration: 0.25;
-  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0, 25);
+  transition-duration: 0.25s;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
 
-  &__hover {
+  &:hover {
     background-color: white;
-    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0, 5);
+    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
   }
 
   a {

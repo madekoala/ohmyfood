@@ -1,6 +1,7 @@
 @import "variables";
 
-body {
+body,
+html {
   margin: auto;
   font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
@@ -23,6 +24,7 @@ body {
 
   &__logo {
     font-family: "Shrikhand", "cursive";
+    font-style: italic;
     margin: 0;
     text-align: center;
   }
