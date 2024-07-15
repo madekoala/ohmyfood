@@ -127,14 +127,14 @@
 }
 
 .cards {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 2rem;
-    @media (min-width: 64rem) {
-      grid-template-columns: repeat(2, 1fr); 
-      gap: 2rem;
-    }
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  @media (min-width: 64rem) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
   }
+}
 
 .card {
   display: block;
@@ -145,6 +145,9 @@
   border-radius: 1rem;
   margin-block: 2rem;
   width: 100%;
+  @media (min-width : 64rem){
+    margin-block: 0rem;
+  }
 
   &__img {
     height: 12rem;
@@ -202,5 +205,3 @@
     background-color: white !important;
   }
 }
-
-
