@@ -123,6 +123,10 @@
     transform: rotate(0);
   }
 
+  &::after &__wrapIcon{
+    display: none;
+  }
+
   &__icon {
     color: $color-tertiary;
   }
@@ -136,6 +140,16 @@
 }
 .delay-2 {
   animation: itemAppear 4s;
+}
+
+@keyframes itemAppear{
+  0%{
+    transform: scale(0);
+  }
+
+  100%{
+    transform: scale(1);
+  }
 }
 
 .wrapBtn {
