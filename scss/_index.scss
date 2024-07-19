@@ -129,7 +129,7 @@
 .cards {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 2rem;
+  gap: 1rem;
   @media (min-width: 64rem) {
     grid-template-columns: repeat(2, 1fr);
     gap: 50px;
@@ -143,10 +143,10 @@
   text-decoration: none;
   background-color: white;
   border-radius: 1rem;
-  margin-block: 2rem;
+  margin-block: 1rem;
   width: 100%;
-  @media (min-width : 64rem){
-    margin-block: 0rem;
+  @media (min-width: 64rem) {
+    margin-block: 2rem;
   }
 
   &__img {

@@ -8,6 +8,9 @@
   z-index: 1;
   margin-top: -4rem;
   margin: auto;
+  @media (min-width: 1025px) {
+    width: 1055px;
+  }
 
   &__header {
     display: flex;
