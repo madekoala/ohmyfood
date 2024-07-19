@@ -249,6 +249,9 @@ html {
 .menuItem:hover .menuItem__confirmation {
   margin-right: -1rem;
 }
+.menuItem:checked .menuItem__confirmation {
+  margin-right: -1rem;
+}
 .menuItem__wrapIcon {
   background-color: white;
   display: flex;

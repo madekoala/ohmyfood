@@ -107,6 +107,10 @@
     margin-right: -1rem;
   }
 
+  &:checked &__confirmation {
+    margin-right: -1rem;
+  }
+
   &__wrapIcon {
     background-color: white;
     display: flex;
@@ -123,7 +127,7 @@
     transform: rotate(0);
   }
 
-  &::after &__wrapIcon{
+  &::after &__wrapIcon {
     display: none;
   }
 
@@ -142,12 +146,12 @@
   animation: itemAppear 4s;
 }
 
-@keyframes itemAppear{
-  0%{
+@keyframes itemAppear {
+  0% {
     transform: scale(0);
   }
 
-  100%{
+  100% {
     transform: scale(1);
   }
 }
