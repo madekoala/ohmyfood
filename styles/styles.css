@@ -98,11 +98,6 @@ html {
   margin: auto;
   /*animation coeur */
 }
-@media (min-width: 1025px) {
-  .menu {
-    width: 1055px;
-  }
-}
 .menu__header {
   display: flex;
   align-items: center;
@@ -334,11 +329,6 @@ html {
   margin: auto;
   /*animation coeur */
 }
-@media (min-width: 1025px) {
-  .menu {
-    width: 1055px;
-  }
-}
 .menu__header {
   display: flex;
   align-items: center;
@@ -550,7 +540,7 @@ html {
 }
 @media (min-width: 64rem) {
   .card {
-    margin-block: 2rem;
+    margin-block: 0rem;
   }
 }
 .card__img {
@@ -613,11 +603,6 @@ html {
   margin-top: -4rem;
   margin: auto;
   /*animation coeur */
-}
-@media (min-width: 1025px) {
-  .menu {
-    width: 1055px;
-  }
 }
 .menu__header {
   display: flex;

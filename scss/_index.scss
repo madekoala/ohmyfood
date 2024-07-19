@@ -145,8 +145,8 @@
   border-radius: 1rem;
   margin-block: 1rem;
   width: 100%;
-  @media (min-width: 64rem) {
-    margin-block: 2rem;
+  @media (min-width : 64rem){
+    margin-block: 0rem;
   }
 
   &__img {
