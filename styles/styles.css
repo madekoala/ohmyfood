@@ -12,7 +12,7 @@ html {
 @media (min-width: 64rem) {
   .container {
     overflow-x: scroll;
-    margin: 70px;
+    margin: 0px;
   }
 }
 
@@ -41,7 +41,7 @@ html {
   .footer .container {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 1rem;
   }
 }
@@ -442,7 +442,8 @@ html {
 }
 
 .tuto {
-  padding: 2rem 1rem;
+  padding: 40px 180px 40px 180px;
+  width: 75%;
 }
 .tuto__title {
   margin-top: 0;
@@ -507,13 +508,7 @@ html {
 
 .restaurants {
   background-color: #f6f6f6;
-  padding: 2rem 1rem;
-}
-
-@media (min-width: 64rem) {
-  .restaurants__title {
-    margin-left: 150px;
-  }
+  padding: 40px 180px;
 }
 
 .cards {
@@ -524,7 +519,9 @@ html {
 @media (min-width: 64rem) {
   .cards {
     grid-template-columns: repeat(2, 1fr);
-    gap: 50px;
+    -moz-column-gap: 100px;
+         column-gap: 100px;
+    row-gap: 50px;
   }
 }
 
