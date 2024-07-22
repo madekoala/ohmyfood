@@ -153,169 +153,162 @@ html {
 }
 
 /**************************************/
-@media (min-width: 64rem) {
-  oik nn .header .with-back-arrow {
-    position: relative;
-  }
-  oik nn .header__arrow {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    transform: translateY(-50%);
-    font-size: 1.2rem;
-    left: 2rem;
-    height: 2rem;
-    width: 2rem;
-    top: 50%;
-    color: black;
-  }
-  .headerImg {
-    -o-object-fit: cover;
-       object-fit: cover;
-    max-width: 100%;
-    max-height: 32rem;
-    width: 100%;
-  }
-  .submenu {
-    overflow: hidden;
-    padding: 0 1rem;
-    max-width: 100%;
-  }
-  .submenu__title {
-    position: relative;
-    text-transform: uppercase;
-    font-weight: normal;
-    padding-bottom: 0.5rem;
-  }
-  .submenu__title::after {
-    content: "";
-    position: absolute;
-    background-color: #99e2d0;
-    left: 0;
-    bottom: 0;
-    height: 0.25rem;
-    width: 3rem;
-  }
-  .menuItem {
-    display: flex;
-    background-color: white;
-    overflow: hidden;
-    animation-fill-mode: both;
-    animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
-    border-radius: 0.75rem;
-    box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    padding: 1rem;
-    margin: 1rem 0;
-    max-width: 100%;
-  }
-  .menuItem__header {
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    flex: 1;
-  }
-  .menuItem__title {
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    margin: 0;
-  }
-  .menuItem__description {
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    margin: 0;
-  }
-  .menuItem__price {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    font-weight: bold;
-    padding-left: 0.5rem;
-  }
-  .menuItem__confirmation {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition-duration: 0.5s;
-    background-color: #99e2d0;
-    margin: -1rem -5rem -1rem 1rem;
-    width: 4rem;
-  }
-  .menuItem:hover .menuItem__confirmation {
-    margin-right: -1rem;
-  }
-  .menuItem:checked .menuItem__confirmation {
-    margin-right: -1rem;
-  }
-  .menuItem__wrapIcon {
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: rotate(180deg);
-    transition-duration: 0.5s;
-    border-radius: 100px;
-    width: 1.6rem;
-    height: 1.6rem;
-  }
-  .menuItem:hover .menuItem__wrapIcon {
-    transform: rotate(0);
-  }
-  .menuItem::after .menuItem__wrapIcon {
-    display: none;
-  }
-  .menuItem__icon {
-    color: #99e2d0;
-  }
-  .delay-0 {
-    animation: itemAppear 2s;
-  }
-  .delay-1 {
-    animation: itemAppear 3s;
-  }
-  .delay-2 {
-    animation: itemAppear 4s;
-  }
-  @keyframes itemAppear {
-    0% {
-      transform: scale(0);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-  .wrapBtn {
-    display: flex;
-    text-decoration: none;
-    justify-content: center;
-    padding: 3rem 0;
-  }
-  .commandBtn {
-    border: 0;
-    padding: 0.75rem 1.5rem;
-    font-weight: 500;
-    font-size: 1.1rem;
-    border-radius: 100px;
-    color: white;
-    background-color: rgb(104, 104, 104);
-    background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9) 0%, rgba(255, 121, 218, 0.9) 100%);
-    cursor: pointer;
-    transition-duration: 0.25s;
-    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
-    cursor: pointer;
-  }
-  .commandBtn:hover {
-    background-color: white;
-    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
-  }
-  .commandBtn a {
-    text-decoration: none;
-    color: inherit;
-  }
+.header--withBackArrow {
+  position: relative;
 }
+.header__arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  left: 2rem;
+  height: 2rem;
+  width: 2rem;
+  top: 50%;
+  color: black;
+}
+
+.headerImg {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 100%;
+  max-height: 32rem;
+  width: 100%;
+}
+
+.submenu {
+  overflow: hidden;
+  padding: 0 1rem;
+  max-width: 100%;
+}
+.submenu__title {
+  position: relative;
+  text-transform: uppercase;
+  font-weight: normal;
+  padding-bottom: 0.5rem;
+}
+.submenu__title::after {
+  content: "";
+  position: absolute;
+  background-color: #9356dc;
+  left: 0;
+  bottom: 0;
+  height: 0.25rem;
+  width: 3rem;
+}
+
+.menuItem {
+  display: flex;
+  background-color: white;
+  overflow: hidden;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  border-radius: 0.75rem;
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  padding: 1rem;
+  margin: 1rem 0;
+  max-width: 100%;
+}
+.menuItem__header {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  flex: 1;
+}
+.menuItem__title {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0;
+}
+.menuItem__description {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin: 0;
+}
+.menuItem__price {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-weight: bold;
+  padding-left: 0.5rem;
+}
+.menuItem__confirmation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.5s;
+  background-color: #99e2d0;
+  margin: -1rem -5rem -1rem 1rem;
+  width: 4rem;
+}
+.menuItem:hover .menuItem__confirmation {
+  margin-right: -1rem;
+}
+.menuItem__wrapIcon {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(180deg);
+  transition-duration: 0.5s;
+  border-radius: 100px;
+  width: 1.6rem;
+  height: 1.6rem;
+}
+.menuItem:hover .menuItem__wrapIcon {
+  transform: rotate(0);
+}
+.menuItem__icon {
+  color: #99e2d0;
+}
+
+.delay-0 {
+  animation: itemAppear 2s;
+}
+
+.delay-1 {
+  animation: itemAppear 3s;
+}
+
+.delay-2 {
+  animation: itemAppear 4s;
+}
+
+.wrapBtn {
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  padding: 3rem 0;
+}
+
+.commandBtn {
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+  border-radius: 100px;
+  color: white;
+  background-color: rgb(104, 104, 104);
+  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9) 0%, rgba(255, 121, 218, 0.9) 100%);
+  cursor: pointer;
+  transition-duration: 0.25s;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+.commandBtn:hover {
+  background-color: white;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+}
+.commandBtn a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .menu {
   position: relative;
   border-radius: 2rem 2rem 0 0;
@@ -437,21 +430,26 @@ html {
   color: inherit;
 }
 
-.tuto {
-  padding: 40px 180px 40px 180px;
-  width: 75%;
-}
 .tuto__title {
-  margin-top: 0;
+  margin-left: 25px;
+}
+@media (min-width: 64rem) {
+  .tuto__title {
+    padding-left: 180px;
+  }
 }
 .tuto__steps {
   padding: 0;
+  margin: 25px 10px 50px 10px;
   list-style: none;
+  font-weight: 500;
   counter-reset: compteListe;
 }
 @media (min-width: 64rem) {
   .tuto__steps {
     display: flex;
+    padding: 10px 180px;
+    width: 75%;
   }
 }
 .tuto__step {
@@ -463,9 +461,6 @@ html {
   background-color: #f6f6f6;
   margin: 1rem 0 1rem 0.75rem;
   padding: 1.5rem;
-}
-.tuto__step:last-child {
-  background-color: #f5edff;
 }
 @media (min-width: 64rem) {
   .tuto__step {
@@ -501,16 +496,31 @@ html {
   margin-right: 1rem;
   color: #7e7e7e;
 }
+.tuto .fa-store {
+  color: #9356dc;
+}
 
 .restaurants {
-  background-color: #f6f6f6;
-  padding: 40px 180px;
+  background-color: rgb(250, 250, 250);
+}
+@media (min-width: 64rem) {
+  .restaurants {
+    padding: 40px 180px;
+    background-color: #f6f6f6;
+  }
+}
+@media (min-width: 64rem) {
+  .restaurants .restaurants__title {
+    padding-top: 0;
+    margin: 0;
+  }
 }
 
 .cards {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 1rem;
+  margin: 15px 10px 50px 10px;
 }
 @media (min-width: 64rem) {
   .cards {
@@ -528,12 +538,11 @@ html {
   text-decoration: none;
   background-color: white;
   border-radius: 1rem;
-  margin-block: 1rem;
   width: 100%;
 }
 @media (min-width: 64rem) {
   .card {
-    margin-block: 0rem;
+    margin-block: 0;
   }
 }
 .card__img {
@@ -553,7 +562,7 @@ html {
 .card__badge {
   position: absolute;
   background-color: #99e2d0;
-  color: #1b6150;
+  color: darken #99e2d0, 50%;
   border-radius: 0.125rem;
   top: 1rem;
   right: 0.75rem;
