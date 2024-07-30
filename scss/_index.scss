@@ -128,6 +128,7 @@
   }
 
   .restaurants__title {
+    margin-left: 25px;
     @media (min-width: 64rem) {
       padding-top: 0;
       margin: 0;
@@ -186,6 +187,12 @@
     display: flex;
     align-items: center;
     position: relative;
+    justify-content: space-between;
+  }
+
+  &__footer a {
+    text-decoration: none;
+    color: black;
   }
 
   &__content {
@@ -204,7 +211,7 @@
   &__btn {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     border: transparent 0px solid;
     padding: 0;
     width: 2rem;

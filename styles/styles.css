@@ -24,7 +24,6 @@ html {
 }
 .header__logo {
   font-family: "Shrikhand", "cursive";
-  font-style: italic;
   margin: 0;
   text-align: center;
 }
@@ -509,6 +508,9 @@ html {
     background-color: #f6f6f6;
   }
 }
+.restaurants .restaurants__title {
+  margin-left: 25px;
+}
 @media (min-width: 64rem) {
   .restaurants .restaurants__title {
     padding-top: 0;
@@ -573,6 +575,11 @@ html {
   display: flex;
   align-items: center;
   position: relative;
+  justify-content: space-between;
+}
+.card__footer a {
+  text-decoration: none;
+  color: black;
 }
 .card__content {
   flex: 1;
@@ -587,7 +594,7 @@ html {
 .card__btn {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   border: transparent 0px solid;
   padding: 0;
   width: 2rem;
