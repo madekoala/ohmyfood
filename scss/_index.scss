@@ -128,6 +128,7 @@
   }
 
   .restaurants__title {
+    padding-top: 50px;
     margin-left: 25px;
     @media (min-width: 64rem) {
       padding-top: 0;
@@ -188,6 +189,8 @@
     align-items: center;
     position: relative;
     justify-content: space-between;
+    background-color: white;
+    border-radius: 0px 0px 20px 20px;
   }
 
   &__footer a {
