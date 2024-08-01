@@ -18,7 +18,7 @@ Paul décide alors que le site contiendra 4 menus dans un premier temps.
 
 ### Outils à disposition :
 
-+ [Maquettes mobile et desktop du site Ohmyfood](https://www.figma.com/file/t4449fzDnwGYmzuwQdu87V/Projet-3-FR---Ohmyfood?node-id=0%3A1)
++ [Maquettes mobile et desktop du site Ohmyfood](https://www.figma.com/design/t4449fzDnwGYmzuwQdu87V/Maquettes-Ohmyfood-(mobile-et-desktop)?node-id=25368-591&t=Lvt3VD1SeOXAobfE-0)
 + [Prototype du site](https://www.figma.com/proto/t4449fzDnwGYmzuwQdu87V/Maquettes-Ohmyfood-(mobile-et-desktop)?node-id=25368-591&scaling=scale-down&page-id=0%3A1&starting-point-node-id=25368%3A591&show-proto-sidebar=1)
 + [Fichiers sources (images et textes)](https://course.oc-static.com/projects/Développeur+Web/IW_P4+Animations+CSS+Ohmyfood/Images+et+textes+Ohmyfood.zip)
 
@@ -27,7 +27,7 @@ Paul décide alors que le site contiendra 4 menus dans un premier temps.
 + Développer pour mobile, tablette et desktop en s’appuyant rigoureusement sur les informations déterminées dans [le brief](https://course.oc-static.com/projects/Développeur+Web/IW_P4+Animations+CSS+Ohmyfood/Brief+creatif+site+Ohmyfood.pdf)créatif ! 
 + Pour rappel, le site doit être responsive et en “mobile first”. On veut aussi des animations soignées. Il faudra que tu m’expliques comment elles fonctionnent. 
 
-### Compétences évoluées :
+### Compétences évaluées :
 
 + Intégrer une maquette en mobile-first 🔥
 + Versionner son projet avec Git et Github 🔥
